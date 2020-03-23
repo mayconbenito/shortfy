@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "src": "/go/(?<code>[^/]+)",
+      "methods": ["GET"],
+      "dest": "/api/routes/redirect-url?code=$code",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "src": "/shortify-url",
+      "methods": ["POST"],
+      "dest": "/api/routes/shortify-url.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ],
+  "env": {
+    "mongodb_url": "@mongodb_url",
+    "production_domain": "@production_domain"
+  }
+}
