@@ -63,7 +63,7 @@ export default function Index() {
 
         {!!shortUrl && (
           <span className="short-url">
-            Here it's your Shortified Link
+            Here it's your Shortified Link {""}
             <a href={shortUrl} target="_blank">
               {shortUrl}
             </a>
