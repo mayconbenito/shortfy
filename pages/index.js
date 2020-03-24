@@ -29,6 +29,10 @@ export default function Index() {
     <div>
       <Head>
         <title>Shortfy</title>
+        <meta
+          name="description"
+          content="Shortfy.ml is a url shortener to reduce long link. Use our tool to Shortfy links and share them."
+        />
         <script
           data-ad-client="ca-pub-6005708002042517"
           async
