@@ -33,11 +33,19 @@ export default function Index() {
           name="description"
           content="Shortfy.ml is a url shortener to reduce long link. Use our tool to Shortfy links and share them."
         />
+
         <script
-          data-ad-client="ca-pub-6005708002042517"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4336856667995288",
+            enable_page_level_ads: true
+          });`
+          }}
+        />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-161588576-1"
