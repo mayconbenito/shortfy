@@ -49,22 +49,6 @@ export default function Index() {
           });`
           }}
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-161588576-1"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-                    function gtag() {
-                      dataLayer.push(arguments);
-                    }
-                    gtag("js", new Date());
-
-                    gtag("config", "UA-161588576-1");
-                    `
-          }}
-        />
       </Head>
       <h1>Shortfy</h1>
       <form className="form" onSubmit={handleShortfyURL}>
