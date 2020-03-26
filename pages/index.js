@@ -6,6 +6,7 @@ import axios from "axios";
 export default function Index() {
   const [url, setUrl] = useState("");
   const [shortUrl, setShortUrl] = useState(null);
+  const [error, setError] = useState(null);
 
   async function handleShortfyURL(event) {
     event.preventDefault();
@@ -20,8 +21,10 @@ export default function Index() {
       );
 
       setShortUrl(response.data.shortURL);
+      setError(null);
     } catch (err) {
       console.log(err);
+      setError("An unexpected error has occurred.");
     }
   }
 
@@ -75,12 +78,14 @@ export default function Index() {
 
         {!!shortUrl && (
           <span className="short-url">
-            Here it's your Shortified Link {""}
+            Here it's your Shortified Link: {""}
             <a href={shortUrl} target="_blank">
               {shortUrl}
             </a>
           </span>
         )}
+
+        {!!error && <span className="error">{error}</span>}
       </form>
     </div>
   );

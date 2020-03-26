@@ -21,6 +21,7 @@ body {
 
 a {
   color: lightblue;
+  text-decoration: none;
 }
 
 h1 {
@@ -70,8 +71,14 @@ h1 {
 }
 
 .short-url {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   margin-top: 2px;
+}
+
+.error {
+  font-size: 1.1rem;
+  margin-top: 2px;
+  color: red;
 }
 
 @media (max-width: 1000px) {
@@ -83,5 +90,17 @@ h1 {
 @media (max-width: 800px) {
   .form {
     width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 55%;
   }
 }
