@@ -54,6 +54,7 @@ export default function Index() {
       <form className="form" onSubmit={handleShortfyURL}>
         <label htmlFor="link">Type the link you want to Shortfy</label>
         <input
+          id="link"
           value={url}
           onChange={e => setUrl(e.target.value)}
           placeholder="Enter the link here"
