@@ -31,7 +31,7 @@ export default function Index() {
   return (
     <div>
       <Head>
-        <title>Shortfy</title>
+        <title>Shortfy - The easiest to use url shortener</title>
         <meta
           name="description"
           content="Shortfy.ml is a url shortener to reduce long link. Use our tool to Shortfy links and share them."
