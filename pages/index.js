@@ -49,6 +49,18 @@ export default function Index() {
           });`
           }}
         />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";`
+          }}
+        />
+        <script
+          src="https://contextual.media.net/dmedianet.js?cid=8CUF4L267"
+          async="async"
+        ></script>
       </Head>
       <h1>Shortfy</h1>
       <form className="form" onSubmit={handleShortfyURL}>
@@ -72,6 +84,20 @@ export default function Index() {
 
         {!!error && <span className="error">{error}</span>}
       </form>
+
+      <div class="ad-box" id="772812332">
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `try {
+                  window._mNHandle.queue.push(function (){
+                      window._mNDetails.loadTag("772812332", "970x90", "772812332");
+                  });
+              }
+              catch (error) {}`
+          }}
+        />
+      </div>
     </div>
   );
 }
