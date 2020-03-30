@@ -13,7 +13,7 @@
     "axios": "^0.19.2",
     "is-valid-domain": "^0.0.14",
     "mongoose": "^5.9.5",
-    "next": "9.2.2",
+    "next": "9.3.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "shortid": "^2.2.15"
