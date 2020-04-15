@@ -16,9 +16,5 @@
         "Access-Control-Allow-Origin": "*"
       }
     }
-  ],
-  "env": {
-    "mongodb_url": "@mongodb_url",
-    "production_domain": "@production_domain"
-  }
+  ]
 }
