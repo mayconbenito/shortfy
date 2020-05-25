@@ -19,11 +19,17 @@ export default function Index() {
           url: url
         }
       );
-
+      
+   
       setShortUrl(response.data.shortURL);
       setError(null);
     } catch (err) {
-      console.log(err);
+      process.env.NODE_ENV !== "production" && console.log(err);
+      if (err.response?.data?.error?.code === 'InvalidURL') {
+        setError('Invalid URL format')
+        return
+      }
+
       setError("An unexpected error has occurred.");
     }
   }
@@ -85,7 +91,7 @@ export default function Index() {
         {!!error && <span className="error">{error}</span>}
       </form>
 
-      <div class="ad-box" id="772812332">
+      <div className="ad-box" id="772812332">
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
