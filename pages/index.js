@@ -70,20 +70,6 @@ export default function Index() {
 
         {!!error && <span className="error">{error}</span>}
       </form>
-
-      <div className="ad-box" id="772812332">
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `try {
-                  window._mNHandle.queue.push(function (){
-                      window._mNDetails.loadTag("772812332", "970x90", "772812332");
-                  });
-              }
-              catch (error) {}`,
-          }}
-        />
-      </div>
     </div>
   );
 }

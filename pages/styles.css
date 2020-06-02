@@ -81,11 +81,6 @@ h1 {
   color: red;
 }
 
-.ad-box {
-  position: absolute;
-  bottom: 0;
-}
-
 @media (max-width: 1000px) {
   .form {
     width: 80%;
