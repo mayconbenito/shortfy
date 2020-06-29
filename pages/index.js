@@ -35,19 +35,6 @@ export default function Index() {
 
   return (
     <div>
-      <Head>
-        <title>Shortfy - The easiest to use url shortener</title>
-        <meta
-          name="description"
-          content="Shortfy.ml is a url shortener to reduce long link. Use our tool to Shortfy links and share them."
-        />
-
-        <script
-          data-ad-client="ca-pub-6005708002042517"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
-      </Head>
       <h1>Shortfy</h1>
       <form className="form" onSubmit={handleShortfyURL}>
         <label htmlFor="link">Type the link you want to Shortify</label>
