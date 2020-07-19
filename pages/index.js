@@ -13,7 +13,7 @@ export default function Index() {
     try {
       const response = await axios.post(
         process.env.NODE_ENV === "production"
-          ? `https://shortfy.ml/shortify-url`
+          ? `https://shortfy.vercel.app/shortify-url`
           : "http://localhost:3000/shortify-url",
         {
           url: url,
