@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-import Head from "next/head";
 import axios from "axios";
 
-export default function Index() {
+ function Index({ domain }) {
   const [url, setUrl] = useState("");
   const [shortUrl, setShortUrl] = useState(null);
   const [error, setError] = useState(null);
@@ -12,9 +11,7 @@ export default function Index() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        process.env.NODE_ENV === "production"
-          ? `https://shortfy.vercel.app/shortify-url`
-          : "http://localhost:3000/shortify-url",
+        `https://${domain}/shortify-url`,
         {
           url: url,
         }
@@ -60,3 +57,11 @@ export default function Index() {
     </div>
   );
 }
+
+Index.getInitialProps = async ({ req, res }) => {
+  const host = req.headers.host;
+
+  return { domain: host };
+}
+
+export default Index;
